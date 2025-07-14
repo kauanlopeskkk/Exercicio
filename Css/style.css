@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50em;
+   width: 60em;
+    background-color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(15, 15, 15);
+    text-align: center;
+background-image: linear-gradient(to left , darkblue , blue);
+overflow: hidden;
+background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    text-align: center;
+background-color: rgb(0, 136, 255);
+width:70%;
+height: 37em;
+margin:  2px auto;
+border: 5px solid  rgba(199, 243, 5, 0.726);
+border-radius: 15px;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.575);
+color: rgb(17, 17, 17);
+
+}
+#Formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+   padding: 5px ;
+text-align: center;
+font-size: 1.2em;
+font-weight: bolder;
+
+}
+div input{
+    color: rgb(37, 37, 37);
+    width: 28em;
+    height: 2rem;
+    margin: 0.6em;
+    border: 5px solid ,rgb(0, 0, 139);
+    border-radius: 10px;
+outline: none;
+font-size: 0.6em;
+padding: 1.2em;
+margin: 0.6em;
+
+
+}
+#Logradouro, #Bairro, #Cidade, #Estado{
+    width: 28em;
+    height: 2rem;
+    margin: 0.6em;
+    font-size: 4em;
+color: rgb(48, 47, 47);
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.6em;
+    padding: 1.2em;
+    margin: 0.6em;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div button{
+    width: 12em;
+    height: 3rem;
+    background-color: darkblue;
+    border: 2px solid  blue;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.719);
+    color: white;
+font-weight: bolder;
+outline: none;
+    
+
+}
+div button:hover{
+    text-decoration: underline rgba(255, 0, 0, 0.705);
+    background-color: rgb(0, 0, 190);
+cursor: pointer;
+    transition: 0.4s ease-in ;
+
+    
+}
+div button:active{
+    background-color: rgb(80, 68, 255);
+    color:darkgray;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.514);
+    text-decoration: underline rgb(0, 119, 255) ;
+    transition: 0.2s ease ;
+}
