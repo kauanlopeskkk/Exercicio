@@ -4,7 +4,19 @@ const preencherFormulario = (endereco) => {
     document.getElementById("Bairro").value = endereco.bairro || "";
     document.getElementById("Cidade").value = endereco.localidade || "";
     document.getElementById("Estado").value = endereco.uf || "";
+
+    localStorage.setItem("endereçoSalvo",JSON.stringify(endereco))
 }
+const limparFormulario = () => {
+ 
+  localStorage.removeItem("enderecoSalvo"); 
+};
+document.addEventListener("DOMContentLoaded", () => {
+  const enderecoSalvo = localStorage.getItem("enderecoSalvo");
+  if (enderecoSalvo) {
+    preencherFormulario(JSON.parse(enderecoSalvo)); // <-- aqui recupera!
+  }
+});
 
 function eNumero(numero) {
     return /^[0-9]/.test(numero);
