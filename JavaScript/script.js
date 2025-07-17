@@ -5,7 +5,7 @@ const preencherFormulario = (endereco) => {
     document.getElementById("Cidade").value = endereco.localidade || "";
     document.getElementById("Estado").value = endereco.uf || "";
 
-    localStorage.setItem("endereçoSalvo",JSON.stringify(endereco))
+    localStorage.setItem("enderecoSalvo",JSON.stringify(endereco))
 }
 const limparFormulario = () => {
  
@@ -14,7 +14,7 @@ const limparFormulario = () => {
 document.addEventListener("DOMContentLoaded", () => {
   const enderecoSalvo = localStorage.getItem("enderecoSalvo");
   if (enderecoSalvo) {
-    preencherFormulario(JSON.parse(enderecoSalvo)); // <-- aqui recupera!
+    preencherFormulario(JSON.parse(enderecoSalvo));
   }
 });
 
